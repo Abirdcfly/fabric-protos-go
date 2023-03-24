@@ -320,15 +320,16 @@ func (*CollectionPolicyConfig) XXX_OneofWrappers() []interface{} {
 	}
 }
 
-func init() {
-	proto.RegisterType((*CollectionConfigPackage)(nil), "protos.CollectionConfigPackage")
-	proto.RegisterType((*CollectionConfig)(nil), "protos.CollectionConfig")
-	proto.RegisterType((*StaticCollectionConfig)(nil), "protos.StaticCollectionConfig")
-	proto.RegisterType((*CollectionPolicyConfig)(nil), "protos.CollectionPolicyConfig")
-}
+/*
+	func init() {
+		proto.RegisterType((*CollectionConfigPackage)(nil), "protos.CollectionConfigPackage")
+		proto.RegisterType((*CollectionConfig)(nil), "protos.CollectionConfig")
+		proto.RegisterType((*StaticCollectionConfig)(nil), "protos.StaticCollectionConfig")
+		proto.RegisterType((*CollectionPolicyConfig)(nil), "protos.CollectionPolicyConfig")
+	}
 
 func init() { proto.RegisterFile("peer/collection.proto", fileDescriptor_d8182e05ac5917d8) }
-
+*/
 var fileDescriptor_d8182e05ac5917d8 = []byte{
 	// 479 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x93, 0xd1, 0x6a, 0xdb, 0x3e,

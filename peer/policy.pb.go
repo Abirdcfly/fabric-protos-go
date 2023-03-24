@@ -103,12 +103,13 @@ func (*ApplicationPolicy) XXX_OneofWrappers() []interface{} {
 	}
 }
 
-func init() {
-	proto.RegisterType((*ApplicationPolicy)(nil), "protos.ApplicationPolicy")
-}
+/*
+	func init() {
+		proto.RegisterType((*ApplicationPolicy)(nil), "protos.ApplicationPolicy")
+	}
 
 func init() { proto.RegisterFile("peer/policy.proto", fileDescriptor_17aa1dd1e55c3e19) }
-
+*/
 var fileDescriptor_17aa1dd1e55c3e19 = []byte{
 	// 243 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x90, 0xc1, 0x4a, 0xc3, 0x40,

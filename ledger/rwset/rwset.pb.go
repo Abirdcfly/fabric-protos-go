@@ -348,18 +348,19 @@ func (m *CollectionPvtReadWriteSet) GetRwset() []byte {
 	return nil
 }
 
-func init() {
-	proto.RegisterEnum("rwset.TxReadWriteSet_DataModel", TxReadWriteSet_DataModel_name, TxReadWriteSet_DataModel_value)
-	proto.RegisterType((*TxReadWriteSet)(nil), "rwset.TxReadWriteSet")
-	proto.RegisterType((*NsReadWriteSet)(nil), "rwset.NsReadWriteSet")
-	proto.RegisterType((*CollectionHashedReadWriteSet)(nil), "rwset.CollectionHashedReadWriteSet")
-	proto.RegisterType((*TxPvtReadWriteSet)(nil), "rwset.TxPvtReadWriteSet")
-	proto.RegisterType((*NsPvtReadWriteSet)(nil), "rwset.NsPvtReadWriteSet")
-	proto.RegisterType((*CollectionPvtReadWriteSet)(nil), "rwset.CollectionPvtReadWriteSet")
-}
+/*
+	func init() {
+		proto.RegisterEnum("rwset.TxReadWriteSet_DataModel", TxReadWriteSet_DataModel_name, TxReadWriteSet_DataModel_value)
+		proto.RegisterType((*TxReadWriteSet)(nil), "rwset.TxReadWriteSet")
+		proto.RegisterType((*NsReadWriteSet)(nil), "rwset.NsReadWriteSet")
+		proto.RegisterType((*CollectionHashedReadWriteSet)(nil), "rwset.CollectionHashedReadWriteSet")
+		proto.RegisterType((*TxPvtReadWriteSet)(nil), "rwset.TxPvtReadWriteSet")
+		proto.RegisterType((*NsPvtReadWriteSet)(nil), "rwset.NsPvtReadWriteSet")
+		proto.RegisterType((*CollectionPvtReadWriteSet)(nil), "rwset.CollectionPvtReadWriteSet")
+	}
 
 func init() { proto.RegisterFile("ledger/rwset/rwset.proto", fileDescriptor_794d00b812408f20) }
-
+*/
 var fileDescriptor_794d00b812408f20 = []byte{
 	// 421 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xac, 0x93, 0xcf, 0xef, 0x93, 0x30,

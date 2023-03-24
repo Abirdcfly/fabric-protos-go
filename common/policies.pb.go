@@ -457,19 +457,20 @@ func (*ApplicationPolicy) XXX_OneofWrappers() []interface{} {
 	}
 }
 
-func init() {
-	proto.RegisterEnum("common.Policy_PolicyType", Policy_PolicyType_name, Policy_PolicyType_value)
-	proto.RegisterEnum("common.ImplicitMetaPolicy_Rule", ImplicitMetaPolicy_Rule_name, ImplicitMetaPolicy_Rule_value)
-	proto.RegisterType((*Policy)(nil), "common.Policy")
-	proto.RegisterType((*SignaturePolicyEnvelope)(nil), "common.SignaturePolicyEnvelope")
-	proto.RegisterType((*SignaturePolicy)(nil), "common.SignaturePolicy")
-	proto.RegisterType((*SignaturePolicy_NOutOf)(nil), "common.SignaturePolicy.NOutOf")
-	proto.RegisterType((*ImplicitMetaPolicy)(nil), "common.ImplicitMetaPolicy")
-	proto.RegisterType((*ApplicationPolicy)(nil), "common.ApplicationPolicy")
-}
+/*
+	func init() {
+		proto.RegisterEnum("common.Policy_PolicyType", Policy_PolicyType_name, Policy_PolicyType_value)
+		proto.RegisterEnum("common.ImplicitMetaPolicy_Rule", ImplicitMetaPolicy_Rule_name, ImplicitMetaPolicy_Rule_value)
+		proto.RegisterType((*Policy)(nil), "common.Policy")
+		proto.RegisterType((*SignaturePolicyEnvelope)(nil), "common.SignaturePolicyEnvelope")
+		proto.RegisterType((*SignaturePolicy)(nil), "common.SignaturePolicy")
+		proto.RegisterType((*SignaturePolicy_NOutOf)(nil), "common.SignaturePolicy.NOutOf")
+		proto.RegisterType((*ImplicitMetaPolicy)(nil), "common.ImplicitMetaPolicy")
+		proto.RegisterType((*ApplicationPolicy)(nil), "common.ApplicationPolicy")
+	}
 
 func init() { proto.RegisterFile("common/policies.proto", fileDescriptor_0d02cf0d453425a3) }
-
+*/
 var fileDescriptor_0d02cf0d453425a3 = []byte{
 	// 559 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x93, 0xd1, 0x4e, 0xdb, 0x30,

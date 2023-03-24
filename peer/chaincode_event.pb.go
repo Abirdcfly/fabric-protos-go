@@ -20,8 +20,8 @@ var _ = math.Inf
 // proto package needs to be updated.
 const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 
-//ChaincodeEvent is used for events and registrations that are specific to chaincode
-//string type - "chaincode"
+// ChaincodeEvent is used for events and registrations that are specific to chaincode
+// string type - "chaincode"
 type ChaincodeEvent struct {
 	ChaincodeId          string   `protobuf:"bytes,1,opt,name=chaincode_id,json=chaincodeId,proto3" json:"chaincode_id,omitempty"`
 	TxId                 string   `protobuf:"bytes,2,opt,name=tx_id,json=txId,proto3" json:"tx_id,omitempty"`
@@ -85,12 +85,13 @@ func (m *ChaincodeEvent) GetPayload() []byte {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*ChaincodeEvent)(nil), "protos.ChaincodeEvent")
-}
+/*
+	func init() {
+		proto.RegisterType((*ChaincodeEvent)(nil), "protos.ChaincodeEvent")
+	}
 
 func init() { proto.RegisterFile("peer/chaincode_event.proto", fileDescriptor_e11f3d5e149f14fa) }
-
+*/
 var fileDescriptor_e11f3d5e149f14fa = []byte{
 	// 221 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x92, 0x2a, 0x48, 0x4d, 0x2d,

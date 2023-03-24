@@ -127,13 +127,14 @@ func (m *BootstrappingSnapshotInfo) GetLastBlockInSnapshot() uint64 {
 	return 0
 }
 
-func init() {
-	proto.RegisterType((*BlockchainInfo)(nil), "common.BlockchainInfo")
-	proto.RegisterType((*BootstrappingSnapshotInfo)(nil), "common.BootstrappingSnapshotInfo")
-}
+/*
+	func init() {
+		proto.RegisterType((*BlockchainInfo)(nil), "common.BlockchainInfo")
+		proto.RegisterType((*BootstrappingSnapshotInfo)(nil), "common.BootstrappingSnapshotInfo")
+	}
 
 func init() { proto.RegisterFile("common/ledger.proto", fileDescriptor_da3410306adbea27) }
-
+*/
 var fileDescriptor_da3410306adbea27 = []byte{
 	// 252 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x90, 0xc1, 0x4a, 0xc4, 0x30,

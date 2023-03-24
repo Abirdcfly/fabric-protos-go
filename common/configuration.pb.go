@@ -291,18 +291,19 @@ func (m *Capability) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_Capability proto.InternalMessageInfo
 
-func init() {
-	proto.RegisterType((*HashingAlgorithm)(nil), "common.HashingAlgorithm")
-	proto.RegisterType((*BlockDataHashingStructure)(nil), "common.BlockDataHashingStructure")
-	proto.RegisterType((*OrdererAddresses)(nil), "common.OrdererAddresses")
-	proto.RegisterType((*Consortium)(nil), "common.Consortium")
-	proto.RegisterType((*Capabilities)(nil), "common.Capabilities")
-	proto.RegisterMapType((map[string]*Capability)(nil), "common.Capabilities.CapabilitiesEntry")
-	proto.RegisterType((*Capability)(nil), "common.Capability")
-}
+/*
+	func init() {
+		proto.RegisterType((*HashingAlgorithm)(nil), "common.HashingAlgorithm")
+		proto.RegisterType((*BlockDataHashingStructure)(nil), "common.BlockDataHashingStructure")
+		proto.RegisterType((*OrdererAddresses)(nil), "common.OrdererAddresses")
+		proto.RegisterType((*Consortium)(nil), "common.Consortium")
+		proto.RegisterType((*Capabilities)(nil), "common.Capabilities")
+		proto.RegisterMapType((map[string]*Capability)(nil), "common.Capabilities.CapabilitiesEntry")
+		proto.RegisterType((*Capability)(nil), "common.Capability")
+	}
 
 func init() { proto.RegisterFile("common/configuration.proto", fileDescriptor_cba1ec2883858369) }
-
+*/
 var fileDescriptor_cba1ec2883858369 = []byte{
 	// 318 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x91, 0x41, 0x6b, 0xf2, 0x40,

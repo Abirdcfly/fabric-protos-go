@@ -526,21 +526,22 @@ func (*DeliverResponse) XXX_OneofWrappers() []interface{} {
 	}
 }
 
-func init() {
-	proto.RegisterEnum("orderer.SeekInfo_SeekBehavior", SeekInfo_SeekBehavior_name, SeekInfo_SeekBehavior_value)
-	proto.RegisterEnum("orderer.SeekInfo_SeekErrorResponse", SeekInfo_SeekErrorResponse_name, SeekInfo_SeekErrorResponse_value)
-	proto.RegisterType((*BroadcastResponse)(nil), "orderer.BroadcastResponse")
-	proto.RegisterType((*SeekNewest)(nil), "orderer.SeekNewest")
-	proto.RegisterType((*SeekOldest)(nil), "orderer.SeekOldest")
-	proto.RegisterType((*SeekSpecified)(nil), "orderer.SeekSpecified")
-	proto.RegisterType((*SeekNextCommit)(nil), "orderer.SeekNextCommit")
-	proto.RegisterType((*SeekPosition)(nil), "orderer.SeekPosition")
-	proto.RegisterType((*SeekInfo)(nil), "orderer.SeekInfo")
-	proto.RegisterType((*DeliverResponse)(nil), "orderer.DeliverResponse")
-}
+/*
+	func init() {
+		proto.RegisterEnum("orderer.SeekInfo_SeekBehavior", SeekInfo_SeekBehavior_name, SeekInfo_SeekBehavior_value)
+		proto.RegisterEnum("orderer.SeekInfo_SeekErrorResponse", SeekInfo_SeekErrorResponse_name, SeekInfo_SeekErrorResponse_value)
+		proto.RegisterType((*BroadcastResponse)(nil), "orderer.BroadcastResponse")
+		proto.RegisterType((*SeekNewest)(nil), "orderer.SeekNewest")
+		proto.RegisterType((*SeekOldest)(nil), "orderer.SeekOldest")
+		proto.RegisterType((*SeekSpecified)(nil), "orderer.SeekSpecified")
+		proto.RegisterType((*SeekNextCommit)(nil), "orderer.SeekNextCommit")
+		proto.RegisterType((*SeekPosition)(nil), "orderer.SeekPosition")
+		proto.RegisterType((*SeekInfo)(nil), "orderer.SeekInfo")
+		proto.RegisterType((*DeliverResponse)(nil), "orderer.DeliverResponse")
+	}
 
 func init() { proto.RegisterFile("orderer/ab.proto", fileDescriptor_79fce58dd8d86d62) }
-
+*/
 var fileDescriptor_79fce58dd8d86d62 = []byte{
 	// 598 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x94, 0xe1, 0x4e, 0xdb, 0x30,

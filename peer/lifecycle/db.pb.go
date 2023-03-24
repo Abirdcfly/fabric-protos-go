@@ -166,13 +166,14 @@ func (*StateData) XXX_OneofWrappers() []interface{} {
 	}
 }
 
-func init() {
-	proto.RegisterType((*StateMetadata)(nil), "lifecycle.StateMetadata")
-	proto.RegisterType((*StateData)(nil), "lifecycle.StateData")
-}
+/*
+	func init() {
+		proto.RegisterType((*StateMetadata)(nil), "lifecycle.StateMetadata")
+		proto.RegisterType((*StateData)(nil), "lifecycle.StateData")
+	}
 
 func init() { proto.RegisterFile("peer/lifecycle/db.proto", fileDescriptor_389b29a8aaf0aebb) }
-
+*/
 var fileDescriptor_389b29a8aaf0aebb = []byte{
 	// 235 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x90, 0xb1, 0x4e, 0xc3, 0x30,

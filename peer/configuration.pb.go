@@ -191,16 +191,17 @@ func (m *ACLs) GetAcls() map[string]*APIResource {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*AnchorPeers)(nil), "protos.AnchorPeers")
-	proto.RegisterType((*AnchorPeer)(nil), "protos.AnchorPeer")
-	proto.RegisterType((*APIResource)(nil), "protos.APIResource")
-	proto.RegisterType((*ACLs)(nil), "protos.ACLs")
-	proto.RegisterMapType((map[string]*APIResource)(nil), "protos.ACLs.AclsEntry")
-}
+/*
+	func init() {
+		proto.RegisterType((*AnchorPeers)(nil), "protos.AnchorPeers")
+		proto.RegisterType((*AnchorPeer)(nil), "protos.AnchorPeer")
+		proto.RegisterType((*APIResource)(nil), "protos.APIResource")
+		proto.RegisterType((*ACLs)(nil), "protos.ACLs")
+		proto.RegisterMapType((map[string]*APIResource)(nil), "protos.ACLs.AclsEntry")
+	}
 
 func init() { proto.RegisterFile("peer/configuration.proto", fileDescriptor_4978ae8738390a60) }
-
+*/
 var fileDescriptor_4978ae8738390a60 = []byte{
 	// 296 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x4c, 0x91, 0xcd, 0x4b, 0xc3, 0x40,

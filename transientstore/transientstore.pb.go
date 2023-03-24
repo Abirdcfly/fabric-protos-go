@@ -80,15 +80,16 @@ func (m *TxPvtReadWriteSetWithConfigInfo) GetCollectionConfigs() map[string]*pee
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*TxPvtReadWriteSetWithConfigInfo)(nil), "transientstore.TxPvtReadWriteSetWithConfigInfo")
-	proto.RegisterMapType((map[string]*peer.CollectionConfigPackage)(nil), "transientstore.TxPvtReadWriteSetWithConfigInfo.CollectionConfigsEntry")
-}
+/*
+	func init() {
+		proto.RegisterType((*TxPvtReadWriteSetWithConfigInfo)(nil), "transientstore.TxPvtReadWriteSetWithConfigInfo")
+		proto.RegisterMapType((map[string]*peer.CollectionConfigPackage)(nil), "transientstore.TxPvtReadWriteSetWithConfigInfo.CollectionConfigsEntry")
+	}
 
-func init() {
-	proto.RegisterFile("transientstore/transientstore.proto", fileDescriptor_fca243668b157b9e)
-}
-
+	func init() {
+		proto.RegisterFile("transientstore/transientstore.proto", fileDescriptor_fca243668b157b9e)
+	}
+*/
 var fileDescriptor_fca243668b157b9e = []byte{
 	// 320 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x84, 0x52, 0x41, 0x4b, 0x33, 0x31,

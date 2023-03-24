@@ -425,17 +425,18 @@ func (m *ChaincodeCall) GetDisregardNamespacePolicy() bool {
 	return false
 }
 
-func init() {
-	proto.RegisterType((*ProposalResponse)(nil), "protos.ProposalResponse")
-	proto.RegisterType((*Response)(nil), "protos.Response")
-	proto.RegisterType((*ProposalResponsePayload)(nil), "protos.ProposalResponsePayload")
-	proto.RegisterType((*Endorsement)(nil), "protos.Endorsement")
-	proto.RegisterType((*ChaincodeInterest)(nil), "protos.ChaincodeInterest")
-	proto.RegisterType((*ChaincodeCall)(nil), "protos.ChaincodeCall")
-}
+/*
+	func init() {
+		proto.RegisterType((*ProposalResponse)(nil), "protos.ProposalResponse")
+		proto.RegisterType((*Response)(nil), "protos.Response")
+		proto.RegisterType((*ProposalResponsePayload)(nil), "protos.ProposalResponsePayload")
+		proto.RegisterType((*Endorsement)(nil), "protos.Endorsement")
+		proto.RegisterType((*ChaincodeInterest)(nil), "protos.ChaincodeInterest")
+		proto.RegisterType((*ChaincodeCall)(nil), "protos.ChaincodeCall")
+	}
 
 func init() { proto.RegisterFile("peer/proposal_response.proto", fileDescriptor_2ed51030656d961a) }
-
+*/
 var fileDescriptor_2ed51030656d961a = []byte{
 	// 591 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x54, 0xdd, 0x6b, 0xdb, 0x3e,

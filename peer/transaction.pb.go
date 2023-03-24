@@ -424,18 +424,19 @@ func (m *ChaincodeEndorsedAction) GetEndorsements() []*Endorsement {
 	return nil
 }
 
-func init() {
-	proto.RegisterEnum("protos.TxValidationCode", TxValidationCode_name, TxValidationCode_value)
-	proto.RegisterEnum("protos.MetaDataKeys", MetaDataKeys_name, MetaDataKeys_value)
-	proto.RegisterType((*ProcessedTransaction)(nil), "protos.ProcessedTransaction")
-	proto.RegisterType((*Transaction)(nil), "protos.Transaction")
-	proto.RegisterType((*TransactionAction)(nil), "protos.TransactionAction")
-	proto.RegisterType((*ChaincodeActionPayload)(nil), "protos.ChaincodeActionPayload")
-	proto.RegisterType((*ChaincodeEndorsedAction)(nil), "protos.ChaincodeEndorsedAction")
-}
+/*
+	func init() {
+		proto.RegisterEnum("protos.TxValidationCode", TxValidationCode_name, TxValidationCode_value)
+		proto.RegisterEnum("protos.MetaDataKeys", MetaDataKeys_name, MetaDataKeys_value)
+		proto.RegisterType((*ProcessedTransaction)(nil), "protos.ProcessedTransaction")
+		proto.RegisterType((*Transaction)(nil), "protos.Transaction")
+		proto.RegisterType((*TransactionAction)(nil), "protos.TransactionAction")
+		proto.RegisterType((*ChaincodeActionPayload)(nil), "protos.ChaincodeActionPayload")
+		proto.RegisterType((*ChaincodeEndorsedAction)(nil), "protos.ChaincodeEndorsedAction")
+	}
 
 func init() { proto.RegisterFile("peer/transaction.proto", fileDescriptor_25804bbfb0752368) }
-
+*/
 var fileDescriptor_25804bbfb0752368 = []byte{
 	// 838 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0x54, 0x5d, 0x6f, 0x22, 0x37,

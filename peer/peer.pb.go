@@ -23,9 +23,9 @@ var _ = math.Inf
 // A compilation error at this line likely means your copy of the
 // proto package needs to be updated.
 const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
-
+/*
 func init() { proto.RegisterFile("peer/peer.proto", fileDescriptor_c302117fbb08ad42) }
-
+*/
 var fileDescriptor_c302117fbb08ad42 = []byte{
 	// 177 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x8f, 0xb1, 0x0a, 0xc2, 0x30,

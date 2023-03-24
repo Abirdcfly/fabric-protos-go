@@ -749,13 +749,13 @@ var xxx_messageInfo_LocalPeerQuery proto.InternalMessageInfo
 // Here is how to compute a set of peers to ask an endorsement from, given an EndorsementDescriptor:
 // Let e: G --> P be the endorsers_by_groups field that maps a group to a set of peers.
 // Note that applying e on a group g yields a set of peers.
-// 1) Select a layout l: G --> N out of the layouts given.
-//    l is the quantities_by_group field of a Layout, and it maps a group to an integer.
-// 2) R = {}  (an empty set of peers)
-// 3) For each group g in the layout l, compute n = l(g)
-//    3.1) Denote P_g as a set of n random peers {p0, p1, ... p_n} selected from e(g)
-//    3.2) R = R U P_g  (add P_g to R)
-// 4) The set of peers R is the peers the client needs to request endorsements from
+//  1. Select a layout l: G --> N out of the layouts given.
+//     l is the quantities_by_group field of a Layout, and it maps a group to an integer.
+//  2. R = {}  (an empty set of peers)
+//  3. For each group g in the layout l, compute n = l(g)
+//     3.1) Denote P_g as a set of n random peers {p0, p1, ... p_n} selected from e(g)
+//     3.2) R = R U P_g  (add P_g to R)
+//  4. The set of peers R is the peers the client needs to request endorsements from
 type EndorsementDescriptor struct {
 	Chaincode string `protobuf:"bytes,1,opt,name=chaincode,proto3" json:"chaincode,omitempty"`
 	// Specifies the endorsers, separated to groups.
@@ -1086,36 +1086,37 @@ func (m *Endpoint) GetPort() uint32 {
 	return 0
 }
 
-func init() {
-	proto.RegisterType((*SignedRequest)(nil), "discovery.SignedRequest")
-	proto.RegisterType((*Request)(nil), "discovery.Request")
-	proto.RegisterType((*Response)(nil), "discovery.Response")
-	proto.RegisterType((*AuthInfo)(nil), "discovery.AuthInfo")
-	proto.RegisterType((*Query)(nil), "discovery.Query")
-	proto.RegisterType((*QueryResult)(nil), "discovery.QueryResult")
-	proto.RegisterType((*ConfigQuery)(nil), "discovery.ConfigQuery")
-	proto.RegisterType((*ConfigResult)(nil), "discovery.ConfigResult")
-	proto.RegisterMapType((map[string]*msp.FabricMSPConfig)(nil), "discovery.ConfigResult.MspsEntry")
-	proto.RegisterMapType((map[string]*Endpoints)(nil), "discovery.ConfigResult.OrderersEntry")
-	proto.RegisterType((*PeerMembershipQuery)(nil), "discovery.PeerMembershipQuery")
-	proto.RegisterType((*PeerMembershipResult)(nil), "discovery.PeerMembershipResult")
-	proto.RegisterMapType((map[string]*Peers)(nil), "discovery.PeerMembershipResult.PeersByOrgEntry")
-	proto.RegisterType((*ChaincodeQuery)(nil), "discovery.ChaincodeQuery")
-	proto.RegisterType((*ChaincodeQueryResult)(nil), "discovery.ChaincodeQueryResult")
-	proto.RegisterType((*LocalPeerQuery)(nil), "discovery.LocalPeerQuery")
-	proto.RegisterType((*EndorsementDescriptor)(nil), "discovery.EndorsementDescriptor")
-	proto.RegisterMapType((map[string]*Peers)(nil), "discovery.EndorsementDescriptor.EndorsersByGroupsEntry")
-	proto.RegisterType((*Layout)(nil), "discovery.Layout")
-	proto.RegisterMapType((map[string]uint32)(nil), "discovery.Layout.QuantitiesByGroupEntry")
-	proto.RegisterType((*Peers)(nil), "discovery.Peers")
-	proto.RegisterType((*Peer)(nil), "discovery.Peer")
-	proto.RegisterType((*Error)(nil), "discovery.Error")
-	proto.RegisterType((*Endpoints)(nil), "discovery.Endpoints")
-	proto.RegisterType((*Endpoint)(nil), "discovery.Endpoint")
-}
+/*
+	func init() {
+		proto.RegisterType((*SignedRequest)(nil), "discovery.SignedRequest")
+		proto.RegisterType((*Request)(nil), "discovery.Request")
+		proto.RegisterType((*Response)(nil), "discovery.Response")
+		proto.RegisterType((*AuthInfo)(nil), "discovery.AuthInfo")
+		proto.RegisterType((*Query)(nil), "discovery.Query")
+		proto.RegisterType((*QueryResult)(nil), "discovery.QueryResult")
+		proto.RegisterType((*ConfigQuery)(nil), "discovery.ConfigQuery")
+		proto.RegisterType((*ConfigResult)(nil), "discovery.ConfigResult")
+		proto.RegisterMapType((map[string]*msp.FabricMSPConfig)(nil), "discovery.ConfigResult.MspsEntry")
+		proto.RegisterMapType((map[string]*Endpoints)(nil), "discovery.ConfigResult.OrderersEntry")
+		proto.RegisterType((*PeerMembershipQuery)(nil), "discovery.PeerMembershipQuery")
+		proto.RegisterType((*PeerMembershipResult)(nil), "discovery.PeerMembershipResult")
+		proto.RegisterMapType((map[string]*Peers)(nil), "discovery.PeerMembershipResult.PeersByOrgEntry")
+		proto.RegisterType((*ChaincodeQuery)(nil), "discovery.ChaincodeQuery")
+		proto.RegisterType((*ChaincodeQueryResult)(nil), "discovery.ChaincodeQueryResult")
+		proto.RegisterType((*LocalPeerQuery)(nil), "discovery.LocalPeerQuery")
+		proto.RegisterType((*EndorsementDescriptor)(nil), "discovery.EndorsementDescriptor")
+		proto.RegisterMapType((map[string]*Peers)(nil), "discovery.EndorsementDescriptor.EndorsersByGroupsEntry")
+		proto.RegisterType((*Layout)(nil), "discovery.Layout")
+		proto.RegisterMapType((map[string]uint32)(nil), "discovery.Layout.QuantitiesByGroupEntry")
+		proto.RegisterType((*Peers)(nil), "discovery.Peers")
+		proto.RegisterType((*Peer)(nil), "discovery.Peer")
+		proto.RegisterType((*Error)(nil), "discovery.Error")
+		proto.RegisterType((*Endpoints)(nil), "discovery.Endpoints")
+		proto.RegisterType((*Endpoint)(nil), "discovery.Endpoint")
+	}
 
 func init() { proto.RegisterFile("discovery/protocol.proto", fileDescriptor_ce69bf33982206ff) }
-
+*/
 var fileDescriptor_ce69bf33982206ff = []byte{
 	// 1113 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xa4, 0x56, 0x5b, 0x6f, 0xe3, 0x44,

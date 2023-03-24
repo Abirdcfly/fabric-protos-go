@@ -142,15 +142,16 @@ func (m *KeyModification) GetIsDelete() bool {
 	return false
 }
 
-func init() {
-	proto.RegisterType((*KV)(nil), "queryresult.KV")
-	proto.RegisterType((*KeyModification)(nil), "queryresult.KeyModification")
-}
+/*
+	func init() {
+		proto.RegisterType((*KV)(nil), "queryresult.KV")
+		proto.RegisterType((*KeyModification)(nil), "queryresult.KeyModification")
+	}
 
-func init() {
-	proto.RegisterFile("ledger/queryresult/kv_query_result.proto", fileDescriptor_f8ee2fe66594a8f2)
-}
-
+	func init() {
+		proto.RegisterFile("ledger/queryresult/kv_query_result.proto", fileDescriptor_f8ee2fe66594a8f2)
+	}
+*/
 var fileDescriptor_f8ee2fe66594a8f2 = []byte{
 	// 290 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x91, 0x4f, 0x4b, 0xc3, 0x30,

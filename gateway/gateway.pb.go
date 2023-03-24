@@ -846,26 +846,27 @@ func (m *PreparedTransaction) GetEnvelope() *common.Envelope {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*EndorseRequest)(nil), "gateway.EndorseRequest")
-	proto.RegisterType((*EndorseResponse)(nil), "gateway.EndorseResponse")
-	proto.RegisterType((*SubmitRequest)(nil), "gateway.SubmitRequest")
-	proto.RegisterType((*SubmitResponse)(nil), "gateway.SubmitResponse")
-	proto.RegisterType((*SignedCommitStatusRequest)(nil), "gateway.SignedCommitStatusRequest")
-	proto.RegisterType((*CommitStatusRequest)(nil), "gateway.CommitStatusRequest")
-	proto.RegisterType((*CommitStatusResponse)(nil), "gateway.CommitStatusResponse")
-	proto.RegisterType((*EvaluateRequest)(nil), "gateway.EvaluateRequest")
-	proto.RegisterType((*EvaluateResponse)(nil), "gateway.EvaluateResponse")
-	proto.RegisterType((*SignedChaincodeEventsRequest)(nil), "gateway.SignedChaincodeEventsRequest")
-	proto.RegisterType((*ChaincodeEventsRequest)(nil), "gateway.ChaincodeEventsRequest")
-	proto.RegisterType((*ChaincodeEventsResponse)(nil), "gateway.ChaincodeEventsResponse")
-	proto.RegisterType((*ErrorDetail)(nil), "gateway.ErrorDetail")
-	proto.RegisterType((*ProposedTransaction)(nil), "gateway.ProposedTransaction")
-	proto.RegisterType((*PreparedTransaction)(nil), "gateway.PreparedTransaction")
-}
+/*
+	func init() {
+		proto.RegisterType((*EndorseRequest)(nil), "gateway.EndorseRequest")
+		proto.RegisterType((*EndorseResponse)(nil), "gateway.EndorseResponse")
+		proto.RegisterType((*SubmitRequest)(nil), "gateway.SubmitRequest")
+		proto.RegisterType((*SubmitResponse)(nil), "gateway.SubmitResponse")
+		proto.RegisterType((*SignedCommitStatusRequest)(nil), "gateway.SignedCommitStatusRequest")
+		proto.RegisterType((*CommitStatusRequest)(nil), "gateway.CommitStatusRequest")
+		proto.RegisterType((*CommitStatusResponse)(nil), "gateway.CommitStatusResponse")
+		proto.RegisterType((*EvaluateRequest)(nil), "gateway.EvaluateRequest")
+		proto.RegisterType((*EvaluateResponse)(nil), "gateway.EvaluateResponse")
+		proto.RegisterType((*SignedChaincodeEventsRequest)(nil), "gateway.SignedChaincodeEventsRequest")
+		proto.RegisterType((*ChaincodeEventsRequest)(nil), "gateway.ChaincodeEventsRequest")
+		proto.RegisterType((*ChaincodeEventsResponse)(nil), "gateway.ChaincodeEventsResponse")
+		proto.RegisterType((*ErrorDetail)(nil), "gateway.ErrorDetail")
+		proto.RegisterType((*ProposedTransaction)(nil), "gateway.ProposedTransaction")
+		proto.RegisterType((*PreparedTransaction)(nil), "gateway.PreparedTransaction")
+	}
 
 func init() { proto.RegisterFile("gateway/gateway.proto", fileDescriptor_285396c8df15061f) }
-
+*/
 var fileDescriptor_285396c8df15061f = []byte{
 	// 853 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x56, 0xdd, 0x6e, 0xe3, 0x44,

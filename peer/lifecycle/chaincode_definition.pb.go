@@ -126,15 +126,16 @@ func (m *ChaincodeValidationInfo) GetValidationParameter() []byte {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*ChaincodeEndorsementInfo)(nil), "lifecycle.ChaincodeEndorsementInfo")
-	proto.RegisterType((*ChaincodeValidationInfo)(nil), "lifecycle.ChaincodeValidationInfo")
-}
+/*
+	func init() {
+		proto.RegisterType((*ChaincodeEndorsementInfo)(nil), "lifecycle.ChaincodeEndorsementInfo")
+		proto.RegisterType((*ChaincodeValidationInfo)(nil), "lifecycle.ChaincodeValidationInfo")
+	}
 
-func init() {
-	proto.RegisterFile("peer/lifecycle/chaincode_definition.proto", fileDescriptor_f0faa93bbd697c66)
-}
-
+	func init() {
+		proto.RegisterFile("peer/lifecycle/chaincode_definition.proto", fileDescriptor_f0faa93bbd697c66)
+	}
+*/
 var fileDescriptor_f0faa93bbd697c66 = []byte{
 	// 275 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x91, 0x4f, 0x4b, 0xb5, 0x40,

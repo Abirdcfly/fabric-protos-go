@@ -124,13 +124,14 @@ func (m *ClusterMetadata) GetActiveNodes() []uint64 {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*BlockMetadata)(nil), "etcdraft.BlockMetadata")
-	proto.RegisterType((*ClusterMetadata)(nil), "etcdraft.ClusterMetadata")
-}
+/*
+	func init() {
+		proto.RegisterType((*BlockMetadata)(nil), "etcdraft.BlockMetadata")
+		proto.RegisterType((*ClusterMetadata)(nil), "etcdraft.ClusterMetadata")
+	}
 
 func init() { proto.RegisterFile("orderer/etcdraft/metadata.proto", fileDescriptor_6d0323e5051228ea) }
-
+*/
 var fileDescriptor_6d0323e5051228ea = []byte{
 	// 244 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x5c, 0x90, 0xbf, 0x4f, 0x32, 0x41,

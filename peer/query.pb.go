@@ -295,16 +295,17 @@ func (m *JoinBySnapshotStatus) GetBootstrappingSnapshotDir() string {
 	return ""
 }
 
-func init() {
-	proto.RegisterType((*ChaincodeQueryResponse)(nil), "protos.ChaincodeQueryResponse")
-	proto.RegisterType((*ChaincodeInfo)(nil), "protos.ChaincodeInfo")
-	proto.RegisterType((*ChannelQueryResponse)(nil), "protos.ChannelQueryResponse")
-	proto.RegisterType((*ChannelInfo)(nil), "protos.ChannelInfo")
-	proto.RegisterType((*JoinBySnapshotStatus)(nil), "protos.JoinBySnapshotStatus")
-}
+/*
+	func init() {
+		proto.RegisterType((*ChaincodeQueryResponse)(nil), "protos.ChaincodeQueryResponse")
+		proto.RegisterType((*ChaincodeInfo)(nil), "protos.ChaincodeInfo")
+		proto.RegisterType((*ChannelQueryResponse)(nil), "protos.ChannelQueryResponse")
+		proto.RegisterType((*ChannelInfo)(nil), "protos.ChannelInfo")
+		proto.RegisterType((*JoinBySnapshotStatus)(nil), "protos.JoinBySnapshotStatus")
+	}
 
 func init() { proto.RegisterFile("peer/query.proto", fileDescriptor_d45bcf7fe2423301) }
-
+*/
 var fileDescriptor_d45bcf7fe2423301 = []byte{
 	// 366 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x92, 0xcf, 0x6a, 0xe3, 0x30,

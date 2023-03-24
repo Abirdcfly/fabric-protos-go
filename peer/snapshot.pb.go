@@ -225,15 +225,16 @@ func (m *QueryPendingSnapshotsResponse) GetBlockNumbers() []uint64 {
 	return nil
 }
 
-func init() {
-	proto.RegisterType((*SnapshotRequest)(nil), "protos.SnapshotRequest")
-	proto.RegisterType((*SnapshotQuery)(nil), "protos.SnapshotQuery")
-	proto.RegisterType((*SignedSnapshotRequest)(nil), "protos.SignedSnapshotRequest")
-	proto.RegisterType((*QueryPendingSnapshotsResponse)(nil), "protos.QueryPendingSnapshotsResponse")
-}
+/*
+	func init() {
+		proto.RegisterType((*SnapshotRequest)(nil), "protos.SnapshotRequest")
+		proto.RegisterType((*SnapshotQuery)(nil), "protos.SnapshotQuery")
+		proto.RegisterType((*SignedSnapshotRequest)(nil), "protos.SignedSnapshotRequest")
+		proto.RegisterType((*QueryPendingSnapshotsResponse)(nil), "protos.QueryPendingSnapshotsResponse")
+	}
 
 func init() { proto.RegisterFile("peer/snapshot.proto", fileDescriptor_d05a247df97d1516) }
-
+*/
 var fileDescriptor_d05a247df97d1516 = []byte{
 	// 398 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xbc, 0x53, 0xcb, 0x8e, 0xd3, 0x30,
